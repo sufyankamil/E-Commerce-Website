@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products.html">Products</a> </li>
+                <li><a href="men.html">Men</a> </li>
+                <li><a href="women.html">Women</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="contact.html">Contact</a> </li>
+                <li><a href="account.html">Account</a> </li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoogle()">
+    </div>
+</div>
+
+<!-------- cart items details --------->
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/HERENOW-Men-Black-Printed-Round-Neck-T-shirt.jpg">
+                    <div>
+                        <p>HERE&Now</p>
+                        <small>Price: Rs.450</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.450</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/ADIDAS-Men-Grey-Dracon-Solid-Running-Shoes.jpg">
+                    <div>
+                        <p>ADIDAS</p>
+                        <small>Price: Rs.1999</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.1999</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/HIGHLANDER-Men-Black-Slim-Fit-Solid-Regular-Trousers.webp">
+                    <div>
+                        <p>Red Highlander</p>
+                        <small>Price: Rs.689</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.689</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/women1-Indo-Era-Beige-Solid-Straight-Kurta-Sets-1.webp">
+                    <div>
+                        <p>Indo-Era Kurta</p>
+                        <small>Price: Rs.1500</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>Rs.1500</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+
+        <table>
+            <tr>
+                <td>Sub-Total</td>
+                <td>Rs.4638</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Rs.100</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Rs.4738</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+
+<!------- FOOTER --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android & iOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our Aim is to Sustainably make the Pleasure and Benefits of Sports Accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy </li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Instagram</li>
+                </ul>
+
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Sufyan Kamil @RedStore <br> All Rights Reserved</p>
+    </div>
+</div>
+<!-------------- js for toogle menu ------------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoogle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</body>
+</html>

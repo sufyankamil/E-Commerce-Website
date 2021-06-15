@@ -1,0 +1,179 @@
+<!----------
+<!DOCTYPE html>
+<head>
+    <title>Cont</title>
+</head>
+<body>
+<div class="container1">
+    <p>CONTACT US</p>
+
+    <div class="login">
+        <input type="text" placeholder="Your Name" class="input">
+        <input type="text" placeholder="Your Email Address" class="input">
+    </div>
+
+    <div class="subject">
+        <input type="text" placeholder="Subject" class="input">
+    </div>
+
+    <div class="msg">
+        <textarea  class="area" placeholder="Leave a Message"></textarea>
+    </div>
+
+    <div class="btnn">Send Message</div>
+</div>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container1{
+        max-width: 800px;
+        height: 600px;
+        background: #fff;
+        margin: 50px auto;
+        box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+        box-sizing: border-box;
+        padding: 40px;
+    }
+
+    p{
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: #486255;
+    }
+
+    .input,
+    .msg .area{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        border: 2px solid #e9eaea;
+        font-size: 14px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .login .input{
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+    }
+
+    .login .input:last-child{
+        margin-right: 0;
+    }
+
+    .msg .area{
+        height: 200px;
+    }
+
+    .btnn{
+        width: 250px;
+        background: #486255;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 0 auto;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .input:focus,
+    .msg .area:focus{
+        border: 2px solid #486255;
+    }
+
+
+
+</style>
+</body>
+----->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="about.html">
+                <img src="images/logo.png" width="125px">
+            </a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products.html">Products</a> </li>
+                <li><a href="men.html">Men</a> </li>
+                <li><a href="women.html">Women</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="contact.html">Contact</a> </li>
+                <li><a href="account.html">Account</a> </li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoogle()">
+    </div>
+</div>
+
+<!-----contact form---->
+<div class="container1">
+    <p class="con">Contact US</p>
+
+    <form>
+    <div class="login">
+        <input type="text" id="uname" placeholder="Your Name" class="input">
+        <input type="text" id="pass" placeholder="Your Email Address" class="input">
+    </div>
+
+    <div class="subject">
+        <input type="number" placeholder="Enter Mobile Number" class="input">
+    </div>
+
+    <div class="msg">
+        <textarea  class="area" placeholder="Leave a Message"></textarea>
+    </div>
+
+    <div class="btnn">Send Message</div>
+    </form>
+</div>
+
+<!------------js------------->
+<script>
+    var username =  document.getElementById("uname");
+    var password = document.getElementById("pass")
+
+    if(username.value == "" || password.value == "")
+    {
+        alert("No blank allowed")
+    }
+    else
+    {
+
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
