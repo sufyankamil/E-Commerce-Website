@@ -1,9 +1,3 @@
-A Web Application used to transfer money between multiple users. A dummy user can also be created.
-
-Tech Stack used -
-Front-end : HTML, CSS, Bootstrap & Javascript
-Back-end : PHP
-Database : MySQL
-
+This is a Ecommerce Website where clothes for men and women are available.
 
 ![ecommerce](https://user-images.githubusercontent.com/66327177/135769781-e98e7163-0b7a-4124-9f2e-36969a5953a6.png)
